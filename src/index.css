@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.running-text-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
