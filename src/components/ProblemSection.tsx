@@ -21,7 +21,7 @@ const ProblemSection = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div
-        className="w-full bg-gradient-to-br from-black to-red-900 rounded-md border border-red-800 p-4 "
+        className="w-full bg-gradient-to-br from-black to-red-900 rounded-xl border border-red-800 p-4 "
         style={{ backgroundColor: "rgba(34, 197, 94, 0.3)" }}
       >
         <h1 className="text-white text-xl md:text-3xl text-center font-bold">
@@ -33,7 +33,12 @@ const ProblemSection = () => {
           ))}
         </div>
 
-        <Button gradient={false} navigateTo="/userInfo" />
+        <Button
+          gradient={false}
+          navigateTo="/userInfo"
+          text="BOOK MY SPOT NOW
+        (Only ₹99)"
+        />
       </div>
     </div>
   );

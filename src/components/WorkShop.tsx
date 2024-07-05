@@ -8,7 +8,7 @@ const WorkShop = () => {
       <h1 className="text-white text-xl md:text-3xl text-center m-4">
         ChatGpt for Marketers Workshop
       </h1>
-      <div className="border border-lime-400 rounded-md max-w-3xl">
+      <div className="border border-lime-400 rounded-xl max-w-3xl">
         <div
           className="flex flex-col items-center justify-center p-4"
           style={{ backgroundColor: "rgba(34, 197, 94, 0.3)" }} // bg-green-700 with 40% opacity

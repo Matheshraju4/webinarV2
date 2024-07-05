@@ -54,8 +54,8 @@ const Faq = () => {
         ))}
       </div>
 
-      <div
-        className="w-full  max-w-4xl text-white p-5 rounded-lg mt-2 flex flex-col items-center justify-center gap-3 border border-lime-500"
+      {/* <div
+        className="w-full  max-w-4xl text-white p-5 rounded-xl mt-2 flex flex-col items-center justify-center gap-3 border border-lime-500"
         style={{ backgroundColor: "rgba(34, 197, 94, 0.3)" }}
       >
         <h1 className="text-xl md:text-2xl font-semibold w-full text-white p-3 text-left ">
@@ -67,7 +67,7 @@ const Faq = () => {
           is safe with us.
         </p>
         <Button gradient={false} />
-      </div>
+      </div> */}
     </div>
   );
 };

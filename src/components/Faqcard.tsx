@@ -9,7 +9,7 @@ const Faqcard = ({ question, answer }: FaqcardProps) => {
   const [direction, setdirection] = useState(false);
   return (
     <div className="w-full">
-      <div className="text-white text-lg font-light border border-gray-700 rounded-md  overflow-hidden  w-full p-4 ">
+      <div className="text-white text-lg font-light border border-gray-700 rounded-xl  overflow-hidden  w-full p-4 ">
         <div className="flex flex-row justify-between items-center">
           <p className="pb-3">{question}</p>
 

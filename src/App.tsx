@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-black">
+    <div className="bg-black font-sans">
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Dashboard />} />

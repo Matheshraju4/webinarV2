@@ -32,7 +32,7 @@ const RunningImages = () => {
           <img
             key={index}
             src={url}
-            className="w-24 h-36 rounded-lg mx-5"
+            className="w-24 h-36 rounded-xl mx-5"
             alt={`Image ${index + 1}`}
           />
         ))}
@@ -42,7 +42,7 @@ const RunningImages = () => {
           <img
             key={index}
             src={url}
-            className="w-24 h-36 rounded-lg mx-5"
+            className="w-24 h-36 rounded-xl mx-5"
             alt={`Image ${index + 1}`}
           />
         ))}

@@ -30,6 +30,7 @@ const formSchema = z.object({
 });
 
 export default function ProfileForm() {
+  const [loader, setLoader] = useState(false);
   const navigate = useNavigate(); // Initialize useNavigate for navigation
   const [paymentId, setpaymentId] = useRecoilState(razorpaypaymentId); // Define paymentId and setpaymentId
 
@@ -138,14 +139,17 @@ export default function ProfileForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    setLoader(true);
     await openRazorpay(values.username, values.email, values.contact);
+    setLoader(false);
+
     console.log("values", values);
   }
 
   return (
     <Form {...form}>
       <div className="flex flex-col justify-center items-center  w-full p-4">
-        <div className="w-full text-center p-4 mt-2 text-3xl md:text-6xl font-bold rounded-md">
+        <div className="w-full text-center p-4 mt-2 text-3xl md:text-6xl font-bold rounded-xl">
           <h1>Super Charge Your Webinar</h1>
         </div>
       </div>
@@ -220,7 +224,7 @@ export default function ProfileForm() {
             type="submit"
             className="w-full bg-gradient-to-r from-lime-500 to-green-500 hover:from-green-600 hover:to-lime-600 rounded-xl text-2xl p-6"
           >
-            Submit & Pay
+            {loader ? "Loading..." : "Submit & Pay"}
           </Button>
         </form>
       </div>

@@ -38,7 +38,7 @@ const ImageCarousel = () => {
         <img
           src={content[currentIndex].image}
           alt={`Slide ${currentIndex}`}
-          className={`w-full h-auto rounded-lg transition-opacity duration-1000 ${
+          className={`w-full h-auto rounded-xl transition-opacity duration-1000 ${
             fade ? "opacity-90" : "opacity-0"
           }`}
         />

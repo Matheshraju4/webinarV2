@@ -25,7 +25,7 @@ const VideoPlayer = () => {
       <ReactPlayer
         width={playerWidth}
         height={playerHeight}
-        url={"https://youtu.be/EvMS73TWIQA?si=r7LeImWvVbku1Bc_"}
+        url="https://vimeo.com/977630015"
         controls={true}
         pipe={true}
       />
