@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Timer = () => {
+  const navigate = useNavigate();
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(10);
 
@@ -45,8 +47,13 @@ const Timer = () => {
             </div>
           </div>
         </div>
-        <div className="w-32 flex flex-col items-center justify-center">
-          <button className="w-full bg-white text-black p-2 rounded-xl mr-2">
+        <div className="w-34 flex flex-col items-center justify-center">
+          <button
+            className="w-full bg-white text-black p-2 text-md rounded-xl mr-2 font-extrabold"
+            onClick={() => {
+              navigate("/userInfo");
+            }}
+          >
             Register Now
           </button>
         </div>

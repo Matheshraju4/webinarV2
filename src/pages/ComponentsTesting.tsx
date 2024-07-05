@@ -15,6 +15,8 @@ import Text from "../components/Text";
 import Timer from "../components/Timer";
 import WhatYoulearn from "../components/TopWhatyoulearn";
 import VideoPlayer from "../components/VideoPlayer";
+import ButtonV2 from "../components/ButtonV2";
+import ButtonW from "../components/ButtonW";
 
 const ComponentsTesting = () => {
   const [loading, setLoading] = useState(true);
@@ -39,49 +41,64 @@ const ComponentsTesting = () => {
           <RunningText text="Make Money While You Sleep with the Secrets of Indian Dropshipping!!" />
           <Text
             type="none"
-            Text="Unlock the Proven Strategies for Indian Dropshipping to Make Six Figure Income Every Month by Launching your First or Next Dropshipping store in India."
+            Text="Unlock the Proven Strategies for Indian Dropshipping to Make Six Figure Income Every Month. "
           />
           <Text
             type="description"
             Text="1128+ Our participants untapped potential of E-commerce dropshipping in India's booming online market using Faceboook meta ads to make a sustainable six figure income stream through dropshipping in India"
           />
-          <SmallCard date="March 1, 2023" time="10:00 AM" />
+          <SmallCard date="Jul 11, 2024" time="7:30 PM" />
           <VideoPlayer />
+          {/* <ButtonV2
+            text="BOOK MY SPOT NOW"
+            textsm="(Only ₹99)"
+            navigateTo="/userInfo"
+          /> */}
           <Button
             gradient={true}
             navigateTo="/userInfo"
-            text="BOOK MY SPOT NOW (Only ₹99)"
-            lessPadding={true}
+            text="BOOK MY SPOT NOW "
+            text2="(Only ₹99)"
           />
           <WhatYoulearn />
+          {/* <ButtonW
+            text="JOIN THE INDIAN DROPSHIPPING WORKSHOP NOW "
+            textsm="(Only ₹99)"
+            navigateTo="/userInfo"
+          /> */}
           <Button
             gradient={false}
             navigateTo="/userInfo"
-            text="JOIN THE INDIAN DROPSHIPPING WORKSHOP NOW (Only ₹99)"
+            text="JOIN THE INDIAN DROPSHIPPING WORKSHOP NOW"
             lessPadding={true}
+            text2="(Only ₹99)"
           />
           <ProblemSection />
           <GetTheseValue />
           <Button
             gradient={false}
             navigateTo="/userInfo"
-            text="JOIN THE INDIAN DROPSHIPPING WORKSHOP NOW (Only ₹99)"
+            text="JOIN THE INDIAN DROPSHIPPING WORKSHOP NOW "
             lessPadding={true}
+            text2="(Only ₹99)"
           />
           <Carousel />
           <Button
             gradient={false}
             navigateTo="/userInfo"
-            text="BOOK MY SPOT NOW (Only ₹99)"
+            text="BOOK MY SPOT NOW "
+            text2="(Only ₹99)"
           />
-          <MeetMentor />
+
           <BonusSection />
+          <MeetMentor />
           <Faq />
           <Button
             gradient={false}
             navigateTo="/userInfo"
-            text="JOIN THE INDIAN DROPSHIPPING WORKSHOP NOW (Only ₹99)"
+            text="JOIN THE INDIAN DROPSHIPPING WORKSHOP NOW "
             lessPadding={true}
+            text2="(Only ₹99)"
           />
           <PrivacyPolicy />
           <Timer />

@@ -13,7 +13,10 @@ const Transparent = ({
         src={img}
         className="max-w-10 rounded-full h-full border border-black"
       />
-      <div>{`${name} | ${address}`}</div>
+      <div className="flex flex-row items-center ">
+        {`${name} -  `}
+        <p className=" pl-1 text-sm md:text-md"> {` ${address}`}</p>
+      </div>
     </div>
   );
 };

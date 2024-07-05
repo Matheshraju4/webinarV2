@@ -9,7 +9,7 @@ const Text = ({
   switch (type) {
     case "description":
       className =
-        "text-lg  text-white text-center px-3 font-light m-3 mb-5 md:text-2xl";
+        "text-md text-white text-center px-3 font-light m-3 mb-5 md:text-2xl";
       break;
 
     default:

@@ -2,10 +2,30 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Transparent from "./Transparent";
 const content = [
-  { image: "./Mohit_Nathan.jpg", name: "Mohit Nathan" },
-  { image: "./Hirtvik_Arora.jpg", name: "Hirtvik Arora" },
-  { image: "./Gaurav_Kumar.jpg", name: "Gaurav Kumar" },
-  { image: "./Ashwin.jpg", name: "Ashwin" },
+  {
+    image: "./Mohit_Nathan.jpg",
+    name: "Mohit Nathan",
+    city: "chennai",
+    userimage: "./user1.jpg",
+  },
+  {
+    image: "./Hirtvik_Arora.jpg",
+    name: "Hirtvik Arora",
+    city: "Hydrabad",
+    userimage: "./user2.jpg",
+  },
+  {
+    image: "./Gaurav_Kumar.jpg",
+    name: "Gaurav Kumar",
+    city: "Mumbai",
+    userimage: "./user3.jpg",
+  },
+  {
+    image: "./Ashwin.jpg",
+    name: "Ashwin",
+    city: "Hydrabad",
+    userimage: "./user4.jpg",
+  },
 ];
 
 const ImageCarousel = () => {
@@ -45,8 +65,8 @@ const ImageCarousel = () => {
         <div className="absolute left-0 right-0  bottom-0 text-black font-bold p-2 text-center bg-gradient-to-r from-lime-300 to-green-300 m-2 rounded-xl ">
           <Transparent
             name={content[currentIndex].name}
-            img={content[currentIndex].image}
-            address="chennai"
+            img={content[currentIndex].userimage}
+            address={content[currentIndex].city}
           />
         </div>
       </div>

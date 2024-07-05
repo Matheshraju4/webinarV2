@@ -34,8 +34,8 @@ const ProblemSection = () => {
         <Button
           gradient={false}
           navigateTo="/userInfo"
-          text="BOOK MY SPOT NOW
-        (Only ₹99)"
+          text="BOOK MY SPOT NOW "
+          text2="(Only ₹99)"
         />
       </div>
     </div>
