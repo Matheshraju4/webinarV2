@@ -15,8 +15,6 @@ import Text from "../components/Text";
 import Timer from "../components/Timer";
 import WhatYoulearn from "../components/TopWhatyoulearn";
 import VideoPlayer from "../components/VideoPlayer";
-import ButtonV2 from "../components/ButtonV2";
-import ButtonW from "../components/ButtonW";
 
 const ComponentsTesting = () => {
   const [loading, setLoading] = useState(true);

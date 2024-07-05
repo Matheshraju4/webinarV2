@@ -63,8 +63,8 @@ export default function ProfileForm() {
       console.log("Backend Response", response.data);
       if (orderId) {
         const options = {
-          key: "rzp_test_nljpzqiedfscaR",
-          amount: "100",
+          key: "rzp_live_k64ecgk5XIPVgp",
+          amount: "9900",
           currency: "INR",
           name: "Delta Art",
           description: "Webinar project",
