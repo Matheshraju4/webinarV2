@@ -1,5 +1,4 @@
-import React from "react";
-import { Calendar, Clock4, Timer } from "lucide-react";
+import { Calendar, Clock4 } from "lucide-react";
 interface SmallCardProps {
   date: string;
   time: string;

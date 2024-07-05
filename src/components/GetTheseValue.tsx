@@ -40,7 +40,7 @@ const GetTheseValue = () => {
         YOU CAN GET THESE VALUES AFTER THIS WORKSHOP
       </h1>
       <div className=" flex-col items-center justify-center md:grid md:grid-cols-2 gap-3 w-full">
-        {GetTheseValue.map((content, index) => (
+        {GetTheseValue.map((content) => (
           <GetvalueCard content={content.content} value={content.value} />
         ))}
       </div>

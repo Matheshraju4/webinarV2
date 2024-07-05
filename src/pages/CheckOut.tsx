@@ -1,18 +1,17 @@
-import React from "react";
 import { razorpaypaymentId } from "../lib/atom";
-import { useRecoilState } from "recoil";
+import { useRecoilValue } from "recoil";
 import { Button } from "../components/ui/button";
 import { useNavigate } from "react-router-dom";
 
 const CheckOut = () => {
   const navigate = useNavigate();
-  const [paymentId, setpaymentId] = useRecoilState(razorpaypaymentId);
+  const paymentId = useRecoilValue(razorpaypaymentId);
+
   if (localStorage.getItem("paymentId") || paymentId) {
     return (
       <div className=" text-white h-screen flex flex-col items-center justify-center p-4">
         <div className="bg-gradient-to-r from-lime-500 to-green-500  w-full max-w-3xl text-black p-5 rounded-xl font-bold text-center md:text-3xl text-xl ">
           <p className="p-1 text-white ">
-            {" "}
             Join this WhatsApp Group for more updates
           </p>
           <p className="md:text-lg text-md font-light"></p>

@@ -1,4 +1,3 @@
-import React from "react";
 import ImageCarousel from "./ImageCoursal";
 
 // Adjust the path as needed

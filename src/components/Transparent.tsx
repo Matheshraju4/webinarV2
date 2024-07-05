@@ -1,5 +1,3 @@
-import React from "react";
-
 const Transparent = ({
   img,
   name,

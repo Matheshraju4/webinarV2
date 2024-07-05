@@ -1,4 +1,3 @@
-import React from "react";
 interface GetvalueCardProps {
   content: string;
   value: string;

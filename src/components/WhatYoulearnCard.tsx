@@ -1,5 +1,5 @@
 import { ChevronDown, ChevronUp, Dot, Notebook } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface WhatYoulearnCardProps {
   heading: string;

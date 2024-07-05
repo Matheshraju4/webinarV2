@@ -1,4 +1,3 @@
-import React from "react";
 import BonusCard from "./BonusCard";
 import Button from "./Button";
 

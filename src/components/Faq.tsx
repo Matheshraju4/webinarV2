@@ -1,6 +1,5 @@
-import React from "react";
 import Faqcard from "./Faqcard";
-import Button from "./Button";
+
 const faqData = [
   {
     question: "What is dropshipping, and how to start in India?",
@@ -49,7 +48,7 @@ const Faq = () => {
         Frequently Asked Questions
       </h1>
       <div className="w-full flex flex-col items-center justify-center gap-3 md:grid md:grid-cols-2">
-        {faqData.map((content, index) => (
+        {faqData.map((content) => (
           <Faqcard question={content.question} answer={content.answer} />
         ))}
       </div>

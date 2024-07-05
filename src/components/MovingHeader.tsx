@@ -1,9 +1,8 @@
 interface RunningTextProps {
   text: string;
   bgClassName?: string;
-  textClassName?: string;
 }
-function RunningText({ text, bgClassName, textClassName }: RunningTextProps) {
+function RunningText({ text, bgClassName }: RunningTextProps) {
   return (
     <div className="p-1">
       <div

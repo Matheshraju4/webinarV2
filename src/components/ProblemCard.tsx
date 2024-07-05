@@ -1,6 +1,3 @@
-import { SquareCheckBig } from "lucide-react";
-import React from "react";
-
 const ProblemCard = ({ text }: { text: string }) => {
   return (
     <div className="text-white  text-lg font-semibold border bg-gradient-to-r from-black to-red-800  rounded-xl my-2 border-red-300 shadow-xl p-3 px-4 flex flex-row gap-3 items-center justify-start w-full">

@@ -14,7 +14,7 @@ import { Input } from "../components/ui/input";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { RecoilRoot, useRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 import { Button } from "../components/ui/button";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import { razorpaypaymentId } from "../lib/atom";
@@ -32,7 +32,7 @@ const formSchema = z.object({
 export default function ProfileForm() {
   const [loader, setLoader] = useState(false);
   const navigate = useNavigate(); // Initialize useNavigate for navigation
-  const [paymentId, setpaymentId] = useRecoilState(razorpaypaymentId); // Define paymentId and setpaymentId
+  const [, setpaymentId] = useRecoilState(razorpaypaymentId); // Define paymentId and setpaymentId
 
   useEffect(() => {
     // Dynamically load Razorpay script
