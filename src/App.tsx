@@ -6,6 +6,7 @@ import CheckOut from "./pages/CheckOut";
 
 import { Helmet } from "react-helmet";
 import { RecoilRoot } from "recoil";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<ComponentsTesting />} />
               <Route path="/userInfo" element={<ProfileForm />} />
               <Route path="/checkOut" element={<CheckOut />} />
+              <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
             </Routes>
           </BrowserRouter>
         </div>

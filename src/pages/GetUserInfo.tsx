@@ -23,10 +23,20 @@ const formSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  email: z.string().min(3).email({ message: "Please provide a valid email." }),
-  contact: z.string().min(10).max(10, {
-    message: "Please provide a valid contact number.",
-  }),
+  email: z
+    .string()
+    .min(3, {
+      message: "Please provide a valid email.",
+    })
+    .email({ message: "Please provide a valid email." }),
+  contact: z
+    .string()
+    .min(10, {
+      message: "Please provide a valid contact number.",
+    })
+    .max(10, {
+      message: "Please provide a valid contact number.",
+    }),
 });
 
 export default function ProfileForm() {
@@ -53,11 +63,14 @@ export default function ProfileForm() {
     contact: string
   ) => {
     try {
-      const response = await axios.post("http://localhost:3000/createuser", {
-        name: username,
-        email,
-        phoneNumber: contact,
-      });
+      const response = await axios.post(
+        "https://api.hustlersacademy.xyz/createuser",
+        {
+          name: username,
+          email,
+          phoneNumber: contact,
+        }
+      );
       console.log("response", response.data);
       const { orderId, razopaypaymentId } = response.data;
       console.log("Backend Response", response.data);
@@ -80,7 +93,7 @@ export default function ProfileForm() {
               } = response;
               console.log("razorpay Response", response);
               const verifyResponse = await axios.post(
-                "http://localhost:3000/verify",
+                "https://api.hustlersacademy.xyz/verify",
                 {
                   order_idServer: orderId,
                   razorpay_order_id,
@@ -169,7 +182,7 @@ export default function ProfileForm() {
                 <FormLabel className="text-xl font-semibold">Name</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Matheshraju"
+                    placeholder="John Doe"
                     {...field}
                     className="border-slate-400 text-slate-500 focus:text-slate-600 focus:border-black focus:border-2"
                   />
@@ -188,7 +201,7 @@ export default function ProfileForm() {
                 <FormLabel className="text-xl font-semibold">Email</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="matheshraju@gmail.com"
+                    placeholder="john@gmail.com"
                     {...field}
                     className="border-slate-600 text-slate-500 focus:text-slate-600 focus:border-black focus:border-2"
                   />
@@ -209,7 +222,7 @@ export default function ProfileForm() {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="8825785551"
+                    placeholder="9456548565"
                     {...field}
                     className="border-slate-600 text-slate-500 focus:text-slate-600 focus:border-black focus:border-2"
                   />
