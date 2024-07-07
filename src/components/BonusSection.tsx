@@ -30,7 +30,7 @@ const BonusSection = () => {
             <BonusCard
               key={index}
               text={content.content}
-              price={content.price}
+              // price={content.price}
             />
           ))}
         </div>
