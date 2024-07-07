@@ -7,6 +7,8 @@ import CheckOut from "./pages/CheckOut";
 import { Helmet } from "react-helmet";
 import { RecoilRoot } from "recoil";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import RefundPolicy from "./pages/RefundPolicy";
+import TermsAndCondition from "./pages/TermsAndCondition";
 
 function App() {
   return (
@@ -23,6 +25,11 @@ function App() {
               <Route path="/userInfo" element={<ProfileForm />} />
               <Route path="/checkOut" element={<CheckOut />} />
               <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+              <Route path="/refundPolicy" element={<RefundPolicy />} />
+              <Route
+                path="/TermsAndConditions"
+                element={<TermsAndCondition />}
+              />
             </Routes>
           </BrowserRouter>
         </div>

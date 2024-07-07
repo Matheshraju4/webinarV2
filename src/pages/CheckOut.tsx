@@ -18,7 +18,9 @@ const CheckOut = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <Button
-            onClick={() => navigate("/dashboard")}
+            onClick={() =>
+              navigate("https://chat.whatsapp.com/LAhlJlkxM5C56kWhb1hIQ2")
+            }
             className="p-3 px-6 mt-3 bg-green-50 text-black rounded-xl"
           >
             Join Now
