@@ -62,7 +62,7 @@ const ImageCarousel = () => {
             fade ? "opacity-90" : "opacity-0"
           }`}
         />
-        <div className="absolute left-0 right-0  bottom-0 text-black font-bold p-2 text-center bg-gradient-to-r from-lime-300 to-green-300 m-2 rounded-xl ">
+        <div className="absolute left-0 right-0  bottom-0 text-white font-bold p-2 text-center bg-black m-2 rounded-xl ">
           <Transparent
             name={content[currentIndex].name}
             img={content[currentIndex].userimage}

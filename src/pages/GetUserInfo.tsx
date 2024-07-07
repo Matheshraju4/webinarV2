@@ -84,6 +84,7 @@ export default function ProfileForm() {
           image:
             "https://www.google.com/imgres?q=nextjs%20image%20icon%20url&imgurl=https%3A%2F%2Fstatic-00.iconduck.com%2Fassets.00%2Fnext-js-icon-2048x2048-5dqjgeku.png&imgrefurl=https%3A%2F%2Ficonduck.com%2Ficons%2F11295%2Fnext-js&docid=3LREy_izk5fyWM&tbnid=BHwjLUdxlfD00M&vet=12ahUKEwib49Wqhb-GAxW1SGwGHeLaACAQM3oECBYQAA..i&w=2048&h=2048&hcb=2&ved=2ahUKEwib49Wqhb-GAxW1SGwGHeLaACAQM3oECBYQAA",
           order_id: razopaypaymentId,
+
           handler: async function (response: any) {
             try {
               const {
@@ -103,7 +104,6 @@ export default function ProfileForm() {
               );
 
               if (verifyResponse.data.success) {
-                console.log("Success", verifyResponse);
                 toast.success("Payment Successful");
                 if (razorpay_payment_id) {
                   setpaymentId(razorpay_payment_id);
@@ -119,6 +119,7 @@ export default function ProfileForm() {
               toast.error("Payment Verification Error");
             }
           },
+          callback_url: "https://webinar.hustlersacademy.xyz/checkout",
           prefill: {
             name: username,
             email: email,
@@ -235,9 +236,9 @@ export default function ProfileForm() {
           />
           <Button
             type="submit"
-            className="w-full bg-gradient-to-r from-lime-500 to-green-500 hover:from-green-600 hover:to-lime-600 rounded-xl text-2xl p-6"
+            className="w-full bg-gradient-to-r from-lime-500 to-green-500 hover:from-green-600 hover:to-lime-600 rounded-xl md:text-2xl  text-lg p-6"
           >
-            {loader ? "Loading..." : "Submit & Pay"}
+            {loader ? "Loading..." : "PAY NOW (Only ₹99) "}
           </Button>
         </form>
       </div>

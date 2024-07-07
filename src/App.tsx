@@ -9,6 +9,7 @@ import { RecoilRoot } from "recoil";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import TermsAndCondition from "./pages/TermsAndCondition";
+import { ContactUs } from "./pages/ContactUs";
 
 function App() {
   return (
@@ -23,13 +24,14 @@ function App() {
             <Routes>
               <Route path="/" element={<ComponentsTesting />} />
               <Route path="/userInfo" element={<ProfileForm />} />
-              <Route path="/checkOut" element={<CheckOut />} />
+              <Route path="/checkout" element={<CheckOut />} />
               <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
               <Route path="/refundPolicy" element={<RefundPolicy />} />
               <Route
                 path="/TermsAndConditions"
                 element={<TermsAndCondition />}
               />
+              <Route path="/contactus" element={<ContactUs />} />
             </Routes>
           </BrowserRouter>
         </div>

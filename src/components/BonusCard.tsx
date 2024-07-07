@@ -6,7 +6,7 @@ const BonusCard = ({ text, price }: { text: string; price: string }) => {
         <SquareCheckBig />
       </div>
       {text}
-      <Label price={price} />
+      {/* <Label price={price} /> */}
     </div>
   );
 };

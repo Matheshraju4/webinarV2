@@ -15,7 +15,6 @@ import Text from "../components/Text";
 import Timer from "../components/Timer";
 import WhatYoulearn from "../components/TopWhatyoulearn";
 import VideoPlayer from "../components/VideoPlayer";
-import { ContactUs } from "../components/ContactUs";
 
 const ComponentsTesting = () => {
   const [loading, setLoading] = useState(true);
@@ -100,7 +99,7 @@ const ComponentsTesting = () => {
             text2="(Only ₹99)"
           />
           <PrivacyPolicy />
-          <ContactUs />
+
           <Timer />
         </>
       )}

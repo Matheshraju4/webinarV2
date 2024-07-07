@@ -33,7 +33,7 @@ const VideoPlayer = () => {
       <ReactPlayer
         width={playerWidth}
         height={playerHeight}
-        url="https://vimeo.com/977630015"
+        url="https://vimeo.com/979864842"
         controls={true}
         pip={true}
         onReady={() => setLoading(false)}

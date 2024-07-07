@@ -1,10 +1,12 @@
 import { razorpaypaymentId } from "../lib/atom";
 import { useRecoilValue } from "recoil";
 import { Button } from "../components/ui/button";
-import { useNavigate } from "react-router-dom";
 
 const CheckOut = () => {
-  const navigate = useNavigate();
+  const handleJoinClick = () => {
+    window.location.href = "https://chat.whatsapp.com/LAhlJlkxM5C56kWhb1hIQ2";
+  };
+
   const paymentId = useRecoilValue(razorpaypaymentId);
 
   if (localStorage.getItem("paymentId") || paymentId) {
@@ -18,10 +20,8 @@ const CheckOut = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <Button
-            onClick={() =>
-              navigate("https://chat.whatsapp.com/LAhlJlkxM5C56kWhb1hIQ2")
-            }
-            className="p-3 px-6 mt-3 bg-green-50 text-black rounded-xl"
+            onClick={handleJoinClick}
+            className="p-3 px-6 mt-3 bg-green-50 text-black rounded-xl hover:border-gray-400 hover:border hover:bg-gray-200"
           >
             Join Now
           </Button>

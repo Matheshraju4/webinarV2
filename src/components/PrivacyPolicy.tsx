@@ -28,6 +28,14 @@ const PrivacyPolicy = () => {
       >
         Refund Policy
       </div>
+      <div
+        onClick={() => {
+          navigate("/contactus");
+        }}
+        className="text-white underline  p-2 text-center hover:cursor-pointer"
+      >
+        Contact Us
+      </div>
     </div>
   );
 };

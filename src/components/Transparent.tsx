@@ -8,10 +8,10 @@ const Transparent = ({
   address: string;
 }) => {
   return (
-    <div className="bg-transparent flex flex-row items-center justify-start gap-5 text-black  text-lg font-normal">
+    <div className="bg-transparent flex flex-row items-center justify-start gap-5 text-white  text-lg font-normal">
       <img
         src={img}
-        className="max-w-10 rounded-full h-full border border-black"
+        className="max-w-10 rounded-full h-full border border-gray-400"
       />
       <div className="flex flex-row items-center ">
         {`${name} -  `}
