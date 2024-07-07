@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col items-center justify-center md:flex-row pb-16 md:pb-32 p-5">
+    <div className="flex flex-col items-center justify-center md:flex-row p-5">
       <div
         onClick={() => {
           navigate("/privacypolicy");
