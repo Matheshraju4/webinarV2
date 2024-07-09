@@ -45,7 +45,7 @@ const ComponentsTesting = () => {
             type="description"
             Text="1128+ Our participants untapped potential of E-commerce dropshipping in India's booming online market using Faceboook meta ads to make a sustainable six figure income stream through dropshipping in India"
           />
-          <SmallCard date="Jul 11, 2024" time="7:30 PM" />
+          <SmallCard date="Jul 13, 2024" time="7:30 PM" />
           <VideoPlayer />
           {/* <ButtonV2
             text="BOOK MY SPOT NOW"
