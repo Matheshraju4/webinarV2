@@ -34,8 +34,8 @@ const WhatYoulearn = () => {
   ];
 
   return (
-    <div className="mt-5  p-4 px-2">
-      <h1 className="text-xl md:text-2xl font-bold text-center text-white p-5 ">
+    <div className="mt-5  p-3 px-1">
+      <h1 className="text-xl md:text-2xl font-bold text-center text-white p-3 ">
         Here’s What You’ll Learn in the 3-Hour Workshop
         <div className="flex md:grid md:grid-cols-2 flex-col gap-5 items-center justify-center">
           {content.map((content) => (

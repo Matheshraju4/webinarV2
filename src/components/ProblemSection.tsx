@@ -19,8 +19,8 @@ const ProblemSection = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div
-        className="w-full bg-gradient-to-br from-black to-red-900 rounded-xl border border-red-800 p-4 "
-        style={{ backgroundColor: "rgba(34, 197, 94, 0.3)" }}
+        className="w-full  p-4 "
+        // style={{ backgroundColor: "rgba(34, 197, 94, 0.3)" }}
       >
         <h1 className="text-white text-xl md:text-3xl text-center font-bold">
           Problems You may face

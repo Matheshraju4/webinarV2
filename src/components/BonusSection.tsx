@@ -19,8 +19,8 @@ const BonusSection = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div
-        className="border border-lime-400 rounded-xl  md:w-full p-4 "
-        style={{ backgroundColor: "rgba(34, 197, 94, 0.3)" }}
+        className="border border-lime-800 rounded-xl  md:w-full p-4 "
+        // style={{ backgroundColor: "rgba(34, 197, 94, 0.3)" }}
       >
         <h1 className="text-white text-xl md:text-3xl text-center font-bold">
           And also enjoy the Bonuses worth ₹8000:

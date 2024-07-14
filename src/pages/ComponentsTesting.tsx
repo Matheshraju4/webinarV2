@@ -53,7 +53,7 @@ const ComponentsTesting = () => {
             navigateTo="/userInfo"
           /> */}
           <Button
-            gradient={true}
+            gradient={false}
             navigateTo="/userInfo"
             text="BOOK MY SPOT NOW "
             text2="(Only ₹99)"

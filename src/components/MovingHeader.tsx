@@ -10,10 +10,10 @@ function RunningText({ text, bgClassName }: RunningTextProps) {
           bgClassName
             ? "overflow-hidden whitespace-nowrap  running-text-container " +
               bgClassName
-            : "overflow-hidden whitespace-nowrap  running-text-container text-white bg-gradient-to-r from-lime-500 to-green-500 rounded-xl"
+            : "overflow-hidden whitespace-nowrap  running-text-container text-white border-lime-800 bg-gradient-to-r from-green-700  to-green-900 rounded-xl"
         }
       >
-        <div className="inline-block animate-marqueeslow px-10 py-2">
+        <div className="inline-block animate-marqueeslow px-10 py-1">
           🌟{text}🌟
         </div>
       </div>
